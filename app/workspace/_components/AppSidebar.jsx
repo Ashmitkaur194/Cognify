@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import Image from 'next/image'
 import { Book, Compass, LayoutDashboard, UserCircle2Icon, WalletCards } from 'lucide-react'
+import AddNewCourseDialog from './AddNewCourseDialog'
 
 
 
@@ -57,7 +58,10 @@ const AppSidebar = () => {
       
       <SidebarContent>
         <SidebarGroup>
-          <Button>Create New Course</Button>
+          <AddNewCourseDialog>
+            <Button>Create New Course</Button>
+          </AddNewCourseDialog>
+       
           <SidebarGroupContent>
             <SidebarMenu>
               {SideBarOptions.map((item, index) => (
